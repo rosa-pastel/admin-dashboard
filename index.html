@@ -8,298 +8,289 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="wrapper">
-        <div class="header">
-            <div class="header-row">
-                <div class="search-bar">
-                    <img class="search-icon" src="./assets/icons/search-outline.svg" alt="">
-                    <input type="text" placeholder=" Search for people or projects">
-                </div>
-                <div class="notifications">
-                    <img class="notifications-icon" src="./assets/icons/notifications-outline.svg" alt="">
-                    <div class="person-icon"><img src="./assets/profile-pictures/dwight-schrute.jpeg" alt=""></div>
-                    <h1>Dwight Schrute (@dschrute)</h1>
-                </div>
-            </div>
-            <div class="header-row">
-                <div class="user-info">
-                    <div class="person-icon-big"><img src="./assets/profile-pictures/dwight-schrute.jpeg" alt=""></div>
-                    <div class="user-info-text">
-                        <p>Hi there,</p>
-                        <h1>DWIGHT SCHRUTE</h1>
-                    </div>
-                </div>
-                <div class="buttons">
-                    <button>Upload</button>
-                    <button>Add </button>
-                    <button>Log Out</button>
-                </div>
-            </div>
-        </div>
-        <div class="sidebar-wrapper">
-            <div class="sidebar">
+    <div class="flex-row">
+        <img class="options" src="./assets/icons/menu-outline.svg" alt="">
+        <div class="sidebar">
                     <div class="logo">
-                        <img src="./assets/icons/grid-outline.svg" alt="">
+                        <img src="./assets/icons/grid-outline.svg" alt="" tabindex="0">
                         <h1>Dunder Mifflin Paper Co. Business Portal</h1>
                     </div>
-                    <ul>
-                        <li>
-                            <img src="./assets/icons/home-outline.svg" alt="Homepage Icon">
-                            <h1>Home</h1>
-                        </li>
-                        <a href="index.html">
+                        <ul>
                             <li>
-                                <img src="./assets/icons/person-outline.svg" alt="Profile Icon">
-                                <h1>Profile</h1>
+                                <img src="./assets/icons/home-outline.svg" alt="Homepage Icon">
+                                <h1>Home</h1>
                             </li>
-                        </a>
-                        <li>
-                            <img src="./assets/icons/chatbubbles-outline.svg" alt="Messages Icon">
-                            <h1>Messages</h1>
-                        </li>
-                        <li>
-                            <img src="./assets/icons/time-outline.svg" alt="History Icon">
-                            <h1>History</h1>
-                        </li>
-                        <li>
-                            <img src="./assets/icons/document-outline.svg" alt="Tasks Icon">
-                            <h1>Tasks</h1>
-                        </li>
-                        <a href="https://theoffice.fandom.com/wiki/Main_Page">
-                        <li>
-                            <img src="./assets/icons/people-outline.svg" alt="Communities Icon">
-                            <h1>Communities</h1>
-                        </li>
-                        </a>
-                    </ul>
-                    <ul>
-                        <li>
-                            <img src="./assets/icons/settings-outline.svg" alt="Settings Icon">
-                            <h1>Settings</h1>
-                        </li>
-                        <li>
-                            <img src="./assets/icons/help-circle-outline.svg" alt="Support Icon">
-                            <h1>Support</h1>
-                        </li>
-                        <li>
-                            <img src="./assets/icons/lock-closed-outline.svg" alt="Privacy Icon">
-                            <h1>Privacy</h1>
-                        </li>
-                    </ul>
+                            <a href="index.html">
+                                <li>
+                                    <img src="./assets/icons/person-outline.svg" alt="Profile Icon">
+                                    <h1>Profile</h1>
+                                </li>
+                            </a>
+                            <li>
+                                <img src="./assets/icons/chatbubbles-outline.svg" alt="Messages Icon">
+                                <h1>Messages</h1>
+                            </li>
+                            <li>
+                                <img src="./assets/icons/time-outline.svg" alt="History Icon">
+                                <h1>History</h1>
+                            </li>
+                            <li>
+                                <img src="./assets/icons/document-outline.svg" alt="Tasks Icon">
+                                <h1>Tasks</h1>
+                            </li>
+                            <a href="https://theoffice.fandom.com/wiki/Main_Page">
+                            <li>
+                                <img src="./assets/icons/people-outline.svg" alt="Communities Icon">
+                                <h1>Communities</h1>
+                            </li>
+                            </a>
+                            <li class="settings">
+                                <img src="./assets/icons/settings-outline.svg" alt="Settings Icon">
+                                <h1>Settings</h1>
+                            </li>
+                            <li>
+                                <img src="./assets/icons/help-circle-outline.svg" alt="Support Icon">
+                                <h1>Support</h1>
+                            </li>
+                            <li>
+                                <img src="./assets/icons/lock-closed-outline.svg" alt="Privacy Icon">
+                                <h1>Privacy</h1>
+                            </li>
+                        </ul>
+        </div>
+        <div class="wrapper">
+            <div class="header">
+                <div class="header-row">
+                    <div class="search-bar">
+                        <img class="search-icon" src="./assets/icons/search-outline.svg" alt="">
+                        <input type="text" placeholder=" Search for people or projects">
+                    </div>
+                    <div class="notifications">
+                        <img class="notifications-icon" src="./assets/icons/notifications-outline.svg" alt="">
+                        <div class="person-icon"><img src="./assets/profile-pictures/dwight-schrute.jpeg" alt=""></div>
+                        <h1>Dwight Schrute (@dschrute)</h1>
+                    </div>
+                </div>
+                <div class="header-row">
+                    <div class="user-info">
+                        <div class="person-icon-big"><img src="./assets/profile-pictures/dwight-schrute.jpeg" alt=""></div>
+                        <div class="user-info-text">
+                            <p>Hi there,</p>
+                            <h1>DWIGHT SCHRUTE</h1>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button>Upload</button>
+                        <button>Add </button>
+                        <button>Log Out</button>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="projects">
+                    <h1>Your Profile</h1>
+                    <div class="card-container">
+                        <!--
+                        OTHER JOBS OF DWIGHT SCHRUTE THAT MAY BE ADDED LATER
+                        <div class="card">
+                            <h1>Regional Manager <span class="detail-text">Dunder Mifflin</span></h1>
+                            <div class="images">
+                                <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
+                                <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
+                                <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h1>Head of Sales <span class="detail-text">Dunder Mifflin Sabre</span></h1>
+                            <div class="images">
+                                <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
+                                <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
+                                <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h1>Co-head of Party Planning Committee <span class="detail-text">Dunder Mifflin</span></h1>
+                            <div class="images">
+                                <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
+                                <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
+                                <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h1>Assistant to the Assistant to the Regional Manager <span class="detail-text">Dunder Mifflin</span></h1>
+                            <div class="images">
+                                <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
+                                <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
+                                <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h1>Assistant Regional Manager <span class="detail-text">Dunder Mifflin</span></h1>
+                            <div class="images">
+                                <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
+                                <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
+                                <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h1>Vice President of Special Projects <span class="detail-text">Sabre</span></h1>
+                            <div class="images">
+                                <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
+                                <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
+                                <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h1>Special Projects Development Team Leader <span class="detail-text">Dunder Mifflin Sabre</span></h1>
+                            <div class="images">
+                                <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
+                                <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
+                                <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h1>Acting Manager <span class="detail-text">Dunder Mifflin Sabre</span></h1>
+                            <div class="images">
+                                <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
+                                <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
+                                <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h1>Team Head of Opening Sabre Stores <span class="detail-text">Dunder Mifflin Sabre</span></h1>
+                            <div class="images">
+                                <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
+                                <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
+                                <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
+                            </div>
+                        </div>
+                        -->
+                        <div class="card c1">
+                            <h1>Assistant to the Regional Manager <span class="detail-text">Dunder Mifflin</span></h1>
+                            <div class="images">
+                                <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
+                                <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
+                                <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
+                            </div>
+                        </div>
+                        <div class="card c2">
+                            <h1>Sales Representative <span class="detail-text">Dunder Mifflin</span></h1>
+                            <div class="images">
+                                <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
+                                <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
+                                <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
+                            </div>
+                        </div>
+                        <div class="card c3">
+                            <h1>Paper Salesman <span class="detail-text">Staples Inc.</span></h1>
+                            <div class="images">
+                                <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
+                                <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
+                                <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
+                            </div>
+                        </div>
+                        <div class="card c4">
+                            <h1>Volunteer Sheriff's Deputy <span class="detail-text">Lackawanna County</span></h1>
+                            <div class="images">
+                                <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
+                                <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
+                                <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
+                            </div>
+                        </div>
+                        <div class="card c5">
+                            <h1>Beet Farmer <span class="detail-text">Schrute Farms</span></h1>
+                            <div class="images">
+                                <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
+                                <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
+                                <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
+                            </div>
+                        </div>
+                        <div class="card c6">
+                            <h1>Agro-Tourism Inn Owner <span class="detail-text">Schrute Farms</span></h1>
+                            <div class="images">
+                                <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
+                                <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
+                                <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
+                            </div>
+                        </div>
+                        <div class="card c7">
+                            <h1>Business Park Owner <span class="detail-text">Scranton Business Park</span></h1>
+                            <div class="images">
+                                <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
+                                <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
+                                <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
+                            </div>
+                        </div>
+                        <div class="card c8">
+                            <h1>Gym Owner <span class="detail-text">Dwight Schrute's Gym For Muscles</span></h1>
+                            <div class="images">
+                                <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
+                                <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
+                                <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
+                            </div>
+                        </div>
+                        <div class="card c9">
+                            <h1>Aspiring Freelance Bodyguard</h1>
+                            <div class="images">
+                                <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
+                                <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
+                                <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="announcements">
+                    <h1>What's Happening</h1>
+                    <div class="an-container">
+                        <div class="announcement">
+                            <h1>Dunder Mifflin Infinity</h1>
+                            <p>A one stop shop consumer experience. <a href="https://dundermifflinpaper.com/"><span class="bold">Visit now</span></a></p>
+                        </div>
+                        <div class="announcement">
+                            <h1>Company Picnic</h1>
+                            <p>Last sunday, employees of all Dunder Mifflin branches came together for a picnic. The closing of Buffalo branch accidentally came out during a skit made by employees. CFO David Wallace revealed it to be true.</p>
+                        </div>
+                        <div class="announcement">
+                            <h1>Shareholder Meeting</h1>
+                            <p>As Dunder Mifflin's stock keeps dropping, a meeting was organized to answer shareholders' questions. A 45-day plan was announced by the Scranton Branch Manager, Michael Scott, to resolve the crisis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="trending">
+                    <h1>People You May Know</h1>
+                    <div class="person-container">
+                        <div class="person">
+                            <div class="person-icon"><img src="./assets/profile-pictures/michael-scott.jpg" alt=""></div>
+                            <div>
+                                <h1>Michael Scott</h1>
+                                <p>Regional Manager<span class="detail-text"> at Dunder Mifflin</span></p>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <div class="person-icon"><img src="./assets/profile-pictures/josh-porter.jpg" alt=""></div>
+                            <div>
+                                <h1>Josh Porter</h1>
+                                <p>Regional Manager<span class="detail-text"> at Dunder Mifflin</span></p>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <div class="person-icon"><img src="./assets/profile-pictures/jan-levinson.jpg" alt=""></div>
+                            <div>
+                                <h1>Jan Levinson</h1>
+                                <p>Vice President of Northeast Sales<span class="detail-text"> at Dunder Mifflin</span></p>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <div class="person-icon"><img src="./assets/profile-pictures/david-wallace.jpg" alt=""></div>
+                            <div>
+                                <h1>David Wallace</h1>
+                                <p>CFO<span class="detail-text"> at Dunder Mifflin</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="main-content">
-            <div class="projects">
-                <h1>Your Profile</h1>
-                <div class="card-container">
-                    <!--
-                    OTHER JOBS OF DWIGHT SCHRUTE THAT MAY BE ADDED LATER
-                    <div class="card">
-                        <h1>Regional Manager <span class="detail-text">Dunder Mifflin</span></h1>
-                        <div class="images">
-                            <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
-                            <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
-                            <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
-                        </div>                    
-                    </div>       
-
-                    <div class="card">
-                        <h1>Head of Sales <span class="detail-text">Dunder Mifflin Sabre</span></h1>
-                        <div class="images">
-                            <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
-                            <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
-                            <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
-                        </div>                    
-                    </div>
-
-                    <div class="card">
-                        <h1>Co-head of Party Planning Committee <span class="detail-text">Dunder Mifflin</span></h1>
-                        <div class="images">
-                            <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
-                            <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
-                            <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
-                        </div>                    
-                    </div>
-
-                    <div class="card">
-                        <h1>Assistant to the Assistant to the Regional Manager <span class="detail-text">Dunder Mifflin</span></h1>
-                        <div class="images">
-                            <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
-                            <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
-                            <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
-                        </div>                    
-                    </div>
-
-                    <div class="card">
-                        <h1>Assistant Regional Manager <span class="detail-text">Dunder Mifflin</span></h1>
-                        <div class="images">
-                            <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
-                            <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
-                            <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
-                        </div>                    
-                    </div>
-
-                    <div class="card">
-                        <h1>Vice President of Special Projects <span class="detail-text">Sabre</span></h1>
-                        <div class="images">
-                            <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
-                            <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
-                            <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
-                        </div>                    
-                    </div>
-
-                    <div class="card">
-                        <h1>Special Projects Development Team Leader <span class="detail-text">Dunder Mifflin Sabre</span></h1>
-                        <div class="images">
-                            <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
-                            <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
-                            <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
-                        </div>                    
-                    </div>
-                    <div class="card">
-                        <h1>Acting Manager <span class="detail-text">Dunder Mifflin Sabre</span></h1>
-                        <div class="images">
-                            <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
-                            <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
-                            <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
-                        </div>                    
-                    </div>
-                    <div class="card">
-                        <h1>Team Head of Opening Sabre Stores <span class="detail-text">Dunder Mifflin Sabre</span></h1>
-                        <div class="images">
-                            <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
-                            <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
-                            <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
-                        </div>                    
-                    </div>
-                    -->    
-                    <div class="card c1">
-                        <h1>Assistant to the Regional Manager <span class="detail-text">Dunder Mifflin</span></h1>
-                        <div class="images">
-                            <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
-                            <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
-                            <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
-                        </div>
-                    </div>
-                    <div class="card c2">
-                        <h1>Sales Representative <span class="detail-text">Dunder Mifflin</span></h1>
-                        <div class="images">
-                            <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
-                            <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
-                            <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
-                        </div>                    
-                    </div>
-                    <div class="card c3">
-                        <h1>Paper Salesman <span class="detail-text">Staples Inc.</span></h1>
-                        <div class="images">
-                            <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
-                            <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
-                            <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
-                        </div>                    
-                    </div>
-                    <div class="card c4">
-                        <h1>Volunteer Sheriff's Deputy <span class="detail-text">Lackawanna County</span></h1>
-                        <div class="images">
-                            <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
-                            <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
-                            <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
-                        </div>                    
-                    </div>
-                    <div class="card c5">
-                        <h1>Beet Farmer <span class="detail-text">Schrute Farms</span></h1>
-                        <div class="images">
-                            <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
-                            <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
-                            <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
-                        </div>                    
-                    </div>         
-                    <div class="card c6">
-                        <h1>Agro-Tourism Inn Owner <span class="detail-text">Schrute Farms</span></h1>
-                        <div class="images">
-                            <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
-                            <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
-                            <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
-                        </div>
-                    </div>
-                    <div class="card c7">
-                        <h1>Business Park Owner <span class="detail-text">Scranton Business Park</span></h1>
-                        <div class="images">
-                            <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
-                            <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
-                            <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
-                        </div>                    
-                    </div>
-                    <div class="card c8">
-                        <h1>Gym Owner <span class="detail-text">Dwight Schrute's Gym For Muscles</span></h1>
-                        <div class="images">
-                            <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
-                            <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
-                            <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
-                        </div>                    
-                    </div>
-                    <div class="card c9">
-                        <h1>Aspiring Freelance Bodyguard</h1>
-                        <div class="images">
-                            <img class="star" src="./assets/icons/star-outline.svg" alt="Star project">
-                            <img class="bookmark" src="./assets/icons/bookmark-outline.svg" alt="Bookmark project">
-                            <img class="share" src="./assets/icons/share-social-outline.svg" alt="Share project">
-                        </div>                    
-                    </div>
-
-                </div>
-            </div>
-            <div class="announcements">
-                <h1>What's Happening</h1>
-                <div class="an-container">
-                    <div class="announcement">
-                        <h1>Dunder Mifflin Infinity</h1>
-                        <p>A one stop shop consumer experience. <a href="https://dundermifflinpaper.com/"><span class="bold">Visit now</span></a></p>
-                    </div>
-                    <div class="announcement">
-                        <h1>Company Picnic</h1>
-                        <p>Last sunday, employees of all Dunder Mifflin branches came together for a picnic. The closing of Buffalo branch accidentally came out during a skit made by employees. CFO David Wallace revealed it to be true.</p>
-                    </div>
-                    <div class="announcement">
-                        <h1>Shareholder Meeting</h1>
-                        <p>As Dunder Mifflin's stock keeps dropping, a meeting was organized to answer shareholders' questions. A 45-day plan was announced by the Scranton Branch Manager, Michael Scott, to resolve the crisis.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="trending">
-                <h1>People You May Know</h1>
-                <div class="person-container">
-                    <div class="person">
-                        <div class="person-icon"><img src="./assets/profile-pictures/michael-scott.jpg" alt=""></div>
-                        <div>
-                            <h1>Michael Scott</h1>
-                            <p>Regional Manager<span class="detail-text"> at Dunder Mifflin</span></p>
-                        </div>
-                    </div>
-                    <div class="person">
-                        <div class="person-icon"><img src="./assets/profile-pictures/josh-porter.jpg" alt=""></div>
-                        <div>
-                            <h1>Josh Porter</h1>
-                            <p>Regional Manager<span class="detail-text"> at Dunder Mifflin</span></p>
-                        </div>
-                    </div>
-                    <div class="person">
-                        <div class="person-icon"><img src="./assets/profile-pictures/jan-levinson.jpg" alt=""></div>
-                        <div>
-                            <h1>Jan Levinson</h1>
-                            <p>Vice President of Northeast Sales<span class="detail-text"> at Dunder Mifflin</span></p>
-                        </div>
-                    </div>
-                    <div class="person">
-                        <div class="person-icon"><img src="./assets/profile-pictures/david-wallace.jpg" alt=""></div>
-                        <div>
-                            <h1>David Wallace</h1>
-                            <p>CFO<span class="detail-text"> at Dunder Mifflin</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
     <div class="footer">
         <h1>Copyright © 2005 - 2023 Dunder Mifflin Paper Co.</h1>

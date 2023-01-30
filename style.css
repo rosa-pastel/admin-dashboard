@@ -5,6 +5,15 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: black;
 }
+body{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.flex-row{
+    display: flex;
+}
 li{
     list-style: none;
 }
@@ -15,8 +24,22 @@ img{
     width: 24px;
     object-fit: cover;
 }
-.images img {
+img.options{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: -1;
+}
+.images img{
     filter: brightness(0) saturate(100%) invert(99%) sepia(4%) saturate(0%) hue-rotate(242deg) brightness(115%) contrast(100%) drop-shadow(1px 1px 2px black);
+}
+.sidebar img,
+img.options {
+    filter: brightness(0) saturate(100%) invert(99%) sepia(4%) saturate(0%) hue-rotate(242deg) brightness(115%) contrast(100%);
+}
+.notifications-icon,
+.search-icon{
+    filter: brightness(0) saturate(100%);
 }
 .card:hover{
     cursor: pointer;
@@ -31,13 +54,6 @@ button:hover {
     position: relative;
     bottom: 2px;
 }
-.sidebar img {
-    filter: brightness(0) saturate(100%) invert(99%) sepia(4%) saturate(0%) hue-rotate(242deg) brightness(115%) contrast(100%);
-}
-.notifications-icon,
-.search-icon{
-    filter: brightness(0) saturate(100%);
-}
 button{
     background-color: #65a30d;
     color: white;
@@ -50,26 +66,32 @@ input{
     border: 1px #65a30d solid;
     border-radius: 15px;
     padding: 0.5em;
-    width: calc(50px + 50%);
+    width: calc(100px + 40%);
     background-color: white;
+    text-overflow: ellipsis;
 }
 input:focus{
     border-color: black;
     outline: none;
 }
 .sidebar{
-    position: fixed;
-}
-.sidebar-wrapper{
     background-color:black;
-    width: calc(250px + 2vmax);
+    padding: 30px;
+    overflow: hidden;
+    width: 70px;
+    flex: 1 0 auto;
 }
-.sidebar ul li,
+.sidebar:hover{
+    width: max-content;
+    overflow: visible;
+}
+.sidebar li,
 .sidebar .logo{
     display: flex;
     gap: 20px;
+    align-items: center;
 }
-.sidebar ul li:hover{
+.sidebar li:hover{
     cursor: pointer;
     position: relative;
     bottom: 2px;
@@ -112,12 +134,11 @@ input:focus{
     flex-direction: column;
     flex-wrap: wrap;
 }
-.sidebar .logo img{
-    object-fit: fill;
-}
 .sidebar .logo h1{
-    width: 150px;
     font-size: 1.25rem;
+}
+.sidebar .logo{
+    width: 200px;
 }
 .sidebar h1{
     color: white;
@@ -127,13 +148,12 @@ input:focus{
 }
 .wrapper{
     background-color: #ecfcbc;
-    width: 100vw;
 }
 .footer{
     background-color: #65a30d;
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     padding: 30px;
     justify-content: center;
     align-items: center;
@@ -220,7 +240,7 @@ input:focus{
 /* GRID*/
 .wrapper{
     display: grid;
-    grid-template: max-content max-content / auto auto;
+    grid-template: max-content max-content / auto;
 }
 .header{
     display: grid;
@@ -231,18 +251,20 @@ input:focus{
     grid-template: 1fr / 1fr max-content;
     justify-content: space-between;
 }
-.sidebar-wrapper{
-    grid-area: 1/1/-1/2;
+.sidebar ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    width: 200px;
+}
+li.settings{
+    margin-top: 30px;
 }
 .sidebar{
-    display: grid;
-    align-content: start;
-    gap: 40px;
-}
-.sidebar ul{
-    display: grid;
-    align-content: start;
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 .main-content{
     display: grid;
@@ -303,3 +325,143 @@ input:focus{
     gap: 20px;
 }
 /* GRID*/
+@media screen and (max-width: 500px) {
+    input{
+        width: 100%;
+    }
+    .flex-row{
+        flex-wrap: wrap;
+    }
+    .sidebar{
+        z-index: 1;
+        gap: 20px;
+        align-items: center;
+        height: 120px;
+        overflow: hidden;
+    }
+    img.options:focus ~ .sidebar,
+    img.options:hover ~ .sidebar,
+    img.options:active ~ .sidebar,
+    .sidebar:hover{
+        height: max-content;
+    }
+    img.options:hover{
+        cursor: pointer;
+    }
+    img.options{
+        z-index: 2;
+    }
+    .sidebar ul{
+        gap: 10px;
+    }
+    .main-content{
+        grid-template: max-content max-content max-content / 1fr;
+    }
+    .header{
+        gap: 20px;
+    }
+    .user-info{
+        position: absolute;
+        z-index: -1;
+    }
+    .header-row{
+        grid-template: 1fr 1fr/ 1fr;
+        height: max-content;
+    }
+    .notifications{
+        order: -2;
+    }
+    .buttons{
+        display: flex;
+        width: 100%;
+    }
+    button{
+        flex: 1;
+    }
+}
+@media screen and (max-width: 650px) and (min-width: 500px) {
+    .flex-row{
+        flex-wrap: wrap;
+    }
+    .sidebar{
+        z-index: 1;
+        gap: 20px;
+        align-items: center;
+        height: 120px;
+        overflow: hidden;
+    }
+    img.options:focus ~ .sidebar,
+    img.options:hover ~ .sidebar,
+    img.options:active ~ .sidebar,
+    .sidebar:hover{
+        height: max-content;
+    }
+    img.options:hover{
+        cursor: pointer;
+    }
+    img.options{
+        z-index: 2;
+    }
+    .sidebar ul{
+        gap: 10px;
+    }
+    .main-content{
+        grid-template: max-content max-content max-content / 1fr;
+    }
+    .user-info{
+        position: absolute;
+        z-index: -1;
+    }
+    .header{
+        gap: 20px;
+    }
+    .header-row{
+        grid-auto-flow: row;
+        grid-template-rows: 1fr;
+        justify-items: start;
+        gap: 10px;
+        height: max-content;
+    }
+    .notifications{
+        order: -2;
+    }
+}
+@media screen and (max-width: 850px) and (min-width: 650px){
+    input{
+        width: 300px;
+    }
+    .flex-row{
+        flex-wrap: wrap;
+    }
+    .sidebar{
+        z-index: 1;
+    }
+    .sidebar ul{
+        gap: 10px;
+        height: 100px;
+        width: 100%;
+    }
+    li.settings{
+        margin-top: 0;
+    }
+    .main-content{
+        grid-template: max-content max-content max-content / 1fr;
+    }
+    .user-info{
+        position: absolute;
+        z-index: -1;
+    }
+    .header{
+        gap: 20px;
+    }
+    .header-row{
+        grid-auto-flow: row;
+        grid-template-rows: 1fr;
+        justify-items: start;
+        gap: 10px;
+        height: max-content;
+    }
+    .notifications{
+        order: -2;
+    }
+}
